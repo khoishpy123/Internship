@@ -1,3 +1,4 @@
+/* CSS #2 Features */
 .features{
     position: absolute;
     width: 764px;
@@ -79,4 +80,56 @@
     font-size: 16px;
     color: #333333;
     margin-right: 10px;
+}
+
+/* CSS #3 Learn More About Us */
+.learnmore{
+    position: absolute;
+    width: 100%;
+    top: 2114px;
+}
+.learnmore-content{
+    left: 10%;
+    display: flex;
+}
+.learnmore-item{
+    margin-left: 75px;
+    width: 24%;
+    text-align: center;
+    padding-top: 15px;
+}
+.learnmore-title{
+    position: relative;
+    width: 376px;
+    height: 47px;
+    left: 450px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #4A4A4A;
+}
+.item-4{
+    position: relative;
+    width: 25%;
+}
+.item-5{
+    position: relative;
+    width: 25%;
+}
+.item-6{
+    position: relative;
+    width: 25%;
+}
+.learnmore-h4{
+    font-size:18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    align-items: flex-end;
+    color: #39394D;
 }
