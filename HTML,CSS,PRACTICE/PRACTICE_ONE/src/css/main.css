@@ -1,4 +1,15 @@
+
 /* CSS #2 Features */
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 .features{
     position: absolute;
     width: 764px;
@@ -185,4 +196,156 @@
 .clients-logo4{
     width: 138px;
     height: 29px;
+}
+
+/* CSS #6 Header */
+#header{
+    background-image:url(../images/backgroundheader.png); 
+    width: 1442px;
+    height: 580px;
+}
+.header-content{
+    position: absolute;
+    width: 1300px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+.header-iconbetterdesk{
+    align-items: center;
+}
+.header-betterdesk{
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 16px;
+    line-height: 14px;
+    position: absolute;
+    width: 89px;
+    height: 14px;
+    left: 120px;
+    color: #fff;
+    top: 11px;
+}
+.header-icon{
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    left: 80px;
+    top: 27px;
+}
+.header-nav{
+    width: 755px;
+    float: left;
+    top: 10px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    font-size: 14px;
+    padding-left: 0px;
+}
+ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 14px;
+    position: relative;
+}
+ul li a::after{
+    content: " ";
+    background: #3DBDB6;
+    width: 0px;
+    height: 3px;
+    margin-top: 50px;
+    position:absolute;
+    bottom: 0px;
+    left: 0;
+}
+ul li a:hover::after{
+    width: 130%;
+}
+
+ul li a.item-btn{
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 20px;
+    position: absolute;
+    width: 90px;
+    height: 38px;
+    top: 20px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+.header-title{
+    position: absolute;
+    width: 343px;
+    height: 162px;
+    left: 80px;
+    top: 182px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    color: #fff;
+}
+.header-search form{
+    width: 500px;
+    position: relative;
+    top: 391px;
+    left: 80px;
+}
+.header-search form input{
+    width: 70%;
+    height: 50px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #FFF;
+    background-color: #85859b;
+    padding-left: 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(218, 209, 209, 0.5);
+}
+::placeholder{
+    color: #fff;
+}
+.header-btn-su{
+    position: absolute;
+    width: 125px;
+    height: 48px;
+    background-color: #3DBDB6;
+    color: #FFF;
+    border: none;
+    box-shadow: 0px 1px 6px #4449A2;
+    margin-top: 2px;
+}
+.header-family{
+    width: 715px;
+    height: 511px;
+}
+
+.header-right{
+    position: absolute;
+    width: 715px;
+    height: 511px;
+    left: 600px;
+    top: 149px;
+}
+.header-logo{
+    position: absolute;
+    width: 1155px;
+    height: 110px;
+    top: 580px;
 }
