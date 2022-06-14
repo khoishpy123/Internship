@@ -257,35 +257,111 @@ ul li a.item-btn{
     color: #333333;
     margin-right: 10px;
 }
+/* CSS #13 Why Better Desk */
+.whybetter{
+    position: absolute;
+    width: 100%;
+    height: 825px;
+    top: 1250px;
+    background-image: url(../images/backgroundwhybetterdesk.png);
+}
+.whybetter-title{
+    position: absolute;
+    width: 282px;
+    height: 47px;
+    left: 510px;
+    top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+}
+.whybetter-decription{
+    width: 1089px;
+    height: 56px;
+    left: 100px;
+    top: 150px;
+    position: absolute;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #fff;
 
+}
+.whybetter-img-list{
+    position: absolute;
+    top: 340px;
+    left: 100px;
+}
+.whybetter-img-support{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.whybetter-img-growing-list{
+    position: absolute;
+}
+.whybetter-img-support img{
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.whybetter-p{
+    position: absolute;
+    top: 40px;
+    width: 443px;
+    height: 60px;   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.whybetter-img-tdl{
+    position: absolute;
+    left: 650px;
+    top: 300px;
+}
+.whybetter-img-tdl img{
+    width: 500px;
+    height: 430px;
+}
 /* CSS #3 Learn More About Us */
 .learnmore{
     position: absolute;
     width: 100%;
-    top: 2114px;
-}
-.learnmore-content{
-    display: flex;
-    margin-left: 90px;
-    text-align: center;
-}
-.learnmore-item{
-    padding-left: 20px;
-    padding-right: 20px;
+    top: 2110px;
 }
 .learnmore-title{
     position: relative;
     width: 376px;
     height: 47px;
     margin-left: 459px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
-
     color: #4A4A4A;
+}
+.learnmore-content{
+    display: flex;
+    margin-left: 90px;
+    text-align: center;
+    padding-top: 40px;
+}
+.learnmore-item{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .item-4{
     position: relative;
