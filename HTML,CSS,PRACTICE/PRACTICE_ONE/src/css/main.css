@@ -254,24 +254,31 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: #FFF;
+    color: #72808E;
     font-family: 'Roboto';
     font-weight: 400;
     line-height: 14px;
     position: relative;
+    display: inline-block;
+    transition: 0.5s ease;
+    padding: 0 10px;
 }
-ul li a::after{
-    content: " ";
-    background: #3DBDB6;
-    width: 0px;
+ul li a:after{
+    content: "";
+    background-color: #3DBDB6;
+    width: 0;
     height: 3px;
     margin-top: 50px;
     position:absolute;
-    bottom: 0px;
+    bottom: -20px;
     left: 0;
+    transition: 0.5s;
 }
-ul li a:hover::after{
-    width: 130%;
+ul li a:hover{
+    color: #FFF;
+}
+ul li a:hover:after{
+    width: 100%;
 }
 
 ul li a.item-btn{
@@ -305,18 +312,21 @@ ul li a.item-btn{
     left: 80px;
 }
 .header-search form input{
+    border: 1px solid #85859b;
     width: 70%;
     height: 50px;
     font-family: 'Roboto';
+    background: transparent;
+    border-right: none;
     font-weight: 400;
+    float: left;
     font-size: 16px;
     line-height: 20px;
     font-style: normal;
-    color: #FFF;
+    outline: none;
     background-color: #85859b;
     padding-left: 25px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px rgba(218, 209, 209, 0.5);
 }
 ::placeholder{
     color: #fff;
@@ -324,12 +334,11 @@ ul li a.item-btn{
 .header-btn-su{
     position: absolute;
     width: 125px;
-    height: 48px;
+    height: 50px;
     background-color: #3DBDB6;
     color: #FFF;
     border: none;
     box-shadow: 0px 1px 6px #4449A2;
-    margin-top: 2px;
 }
 .header-family{
     width: 715px;
