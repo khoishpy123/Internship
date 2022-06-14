@@ -1,12 +1,22 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 /* CSS #6 Header */
-#header{
+.header{
     background-image:url(../images/backgroundheader.png); 
-    width: 1442px;
+    width: 100%;
     height: 580px;
 }
 .header-content{
     position: absolute;
-    width: 1300px;
+    width: 100%;
     height: 72px;
     left: 0px;
     top: 0px;
@@ -38,13 +48,14 @@
 .header-nav{
     width: 755px;
     float: left;
-    top: 10px;
 }
 ul{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    margin-left: -130px;
 }
 ul li{
     list-style: none;
@@ -113,7 +124,7 @@ ul li a.item-btn{
 }
 .header-search form input{
     border: 1px solid #85859b;
-    width: 70%;
+    width: 65%;
     height: 50px;
     font-family: 'Roboto';
     background: transparent;
@@ -152,37 +163,44 @@ ul li a.item-btn{
     left: 600px;
     top: 149px;
 }
-.header-logo{
+.header-logo img{
     position: absolute;
-    width: 1155px;
+    left:0;
+    width: 1310px;
     height: 110px;
     top: 580px;
 }
+
 /* CSS #2 Features */
-body {
-    margin: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 .features{
     position: absolute;
-    width: 764px;
+    width: 100%;
     height: 349px;
     top: 780px;
-    left: 335px;
+}
+.features-title{
+    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.00625em;
+    color: #333333;
+    padding-left: 400px;
 }
 .features-content{
     display: flex;
+    padding-left: 300px;
 }
 .features-items{
     width: 200px;
     justify-content: space-between;
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .item-1{
     background-image:url(../images/support-1.png);
@@ -223,18 +241,6 @@ body {
     right: 25px;
     margin: auto;
 }
-.features-title{
-    text-align: center;
-    font-style: normal;
-    font-family: 'Roboto';
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 400;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 0.00625em;
-    color: #333333;
-}
 .features-link{
     color: #2D8CFF;
 }
@@ -259,20 +265,19 @@ body {
     top: 2114px;
 }
 .learnmore-content{
-    left: 10%;
     display: flex;
+    margin-left: 90px;
+    text-align: center;
 }
 .learnmore-item{
-    margin-left: 75px;
-    width: 24%;
-    text-align: center;
-    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .learnmore-title{
     position: relative;
     width: 376px;
     height: 47px;
-    left: 450px;
+    margin-left: 459px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -306,19 +311,22 @@ body {
 
 /* CSS #4 Clients */
 .clients{
+    margin-top: 14px;
     position: absolute;
     width: 100%;
     top: 3651px;
-    margin: 0px 8%;
+    margin: 0;
 }
 .clients-content{
     display: flex;
+    align-items:center;
+    margin-left: 100px;
+    padding-top: 14px;
 }
 .clients-items{
-    width: 20%;
-    margin-left: 10px;
+    padding-left: 20px;
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 .clients-avatar{
     width: 80px;
@@ -339,31 +347,40 @@ body {
     line-height: 21px;
     font-weight: 400;
     color: #39394D;
+    margin-top: 10px;
 }
 .clients-logo1{
     width: 90px;
     height: 18.15px;
+    padding-right: 40px;
+    margin-top:-10px;
 }
 .clients-logo2{
     width: 110px;
-    height: 20.88px;
+    height: 20.88px; 
+    padding-right: 40px;
+    margin-top:-10px;
 }
 .clients-logo3{
     width: 138px;
-    height: 32px;
+    height: 32px; 
+    padding-right: 40px;
+    margin-top:-14px;
 }
 .clients-logo4{
     width: 138px;
-    height: 29px;
+    height: 29px; 
+    padding-right: 40px;
+    margin-top:-12px;
 }
 
 /* CSS #8 Ad */
 .ad{
     position: absolute;
-    width: 1446px;
+    width: 100%;
     height: 180px;
     left: -6px;
-    top: 2710px;
+    top: 2724px;
     background: linear-gradient(138.41deg, #1172D0 6.2%, #1D98D6 99.82%);
     border: 1px solid #E1E1E1;
 }
@@ -422,12 +439,27 @@ body {
     margin-top: -36px;
     font-size: 12px;  
 }
+/* CSS #9 Video Testimonial 
+.video{
+    position: absolute;
+    width: 100%;
+    height: 721px;
+    left: 0px;
+    top: 2905px;
+}
+.video img{
+    mix-blend-mode: darken;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 726px;
+} */
 
 /* CSS #11 Subcribe */
 .subcribe{
     box-sizing: border-box;
     position: absolute;
-    width: 1600px;
+    width: 100%;
     height: 307px;
     top: 3771px;
     background: #3DBDB6;
