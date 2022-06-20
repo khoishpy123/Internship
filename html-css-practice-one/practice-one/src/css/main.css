@@ -9,7 +9,7 @@ body {
     vertical-align: baseline;
 }
 /* CSS #6 Header */
-.header{
+.page-header{
     background-image:url(../images/backgroundheader.png); 
     width: 100%;
     height: 580px;
@@ -24,19 +24,12 @@ body {
     justify-content: space-between;
     padding-top: 14px;
 }
-.header-iconbetterdesk{
+.header-icon-betterdesk{
     align-items: center;
 }
-.header-betterdesk{
-    font-family: 'Arial Rounded MT Bold';
-    font-size: 16px;
-    line-height: 14px;
-    position: absolute;
-    width: 89px;
-    height: 14px;
-    left: 120px;
-    color: #fff;
-    top: 11px;
+.header-title-betterdesk{
+    margin-top: 18px;
+    margin-left: 120px;
 }
 .header-icon{
     position: absolute;
@@ -49,7 +42,7 @@ body {
     width: 755px;
     float: left;
 }
-ul{
+.header-nav ul{
     float: left;
     display: flex;
     justify-content: center;
@@ -57,13 +50,13 @@ ul{
     padding-left: 10px;
     margin-left: -130px;
 }
-ul li{
+.header-nav ul li{
     list-style: none;
     margin-left: 62px;
     font-size: 14px;
     padding-left: 0px;
 }
-ul li a{
+.header-nav ul li a{
     text-decoration: none;
     color: #72808E;
     font-family: 'Roboto';
@@ -74,7 +67,7 @@ ul li a{
     transition: 0.5s ease;
     padding: 0 10px;
 }
-ul li a:after{
+.header-nav ul li a:after{
     content: "";
     background-color: #3DBDB6;
     width: 0;
@@ -85,14 +78,14 @@ ul li a:after{
     left: 0;
     transition: 0.5s;
 }
-ul li a:hover{
+.header-nav ul li a:hover{
     color: #FFF;
 }
-ul li a:hover:after{
+.header-navul li a:hover:after{
     width: 100%;
 }
 
-ul li a.item-btn{
+.header-nav ul li a.item-btn{
     box-sizing: border-box;
     padding-top: 9px;
     padding-left: 20px;
@@ -142,7 +135,7 @@ ul li a.item-btn{
 ::placeholder{
     color: #fff;
 }
-.header-btn-su{
+.header-button-signup{
     position: absolute;
     width: 125px;
     height: 50px;
@@ -156,7 +149,7 @@ ul li a.item-btn{
     height: 511px;
 }
 
-.header-right{
+.header-family-bicycle{
     position: absolute;
     width: 715px;
     height: 511px;
@@ -172,7 +165,7 @@ ul li a.item-btn{
 }
 
 /* CSS #2 Features */
-.features{
+.page-features{
     position: absolute;
     width: 100%;
     height: 349px;
@@ -202,7 +195,7 @@ ul li a.item-btn{
     padding-left: 30px;
     padding-right: 30px;
 }
-.item-1{
+.item-support{
     background-image:url(../images/support-1.png);
     background-repeat: no-repeat;
     height: 57%;
@@ -215,7 +208,7 @@ ul li a.item-btn{
     left : 27px;
     margin: auto;
 }
-.item-2{
+.item-help-desk{
     background-image:url(../images/helpdesk-1.png);
     background-repeat: no-repeat;
     height: 57%;
@@ -228,7 +221,7 @@ ul li a.item-btn{
     left: 30px;
     margin: auto;
 }
-.item-3{
+.item-chat{
     background-image:url(../images/chat-1.png);
     background-repeat: no-repeat;
     height: 57%;
@@ -244,13 +237,13 @@ ul li a.item-btn{
 .features-link{
     color: #2D8CFF;
 }
-.features-p{
+.features-description-item{
     color: #72808E;
     font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
 }
-.feature-h4{
+.feature-name-item{
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -258,7 +251,7 @@ ul li a.item-btn{
     margin-right: 10px;
 }
 /* CSS #13 Why Better Desk */
-.whybetter{
+.page-whybetter{
     position: absolute;
     width: 100%;
     height: 825px;
@@ -312,7 +305,7 @@ ul li a.item-btn{
     margin-left: -30px;
     margin-top: -30px;
 }
-.whybetter-p{
+.whybetter-description-support{
     position: absolute;
     top: 40px;
     width: 443px;
@@ -326,7 +319,7 @@ ul li a.item-btn{
     align-items: center;
     color: #fff;
 }
-.whybetter-img-tdl{
+.whybetter-img-to-do-list{
     position: absolute;
     left: 650px;
     top: 300px;
@@ -336,7 +329,7 @@ ul li a.item-btn{
     height: 430px;
 }
 /* CSS #3 Learn More About Us */
-.learnmore{
+.page-learnmore{
     position: absolute;
     width: 100%;
     top: 2110px;
@@ -363,19 +356,19 @@ ul li a.item-btn{
     padding-left: 20px;
     padding-right: 20px;
 }
-.item-4{
+.item-two-women{
     position: relative;
     width: 25%;
 }
-.item-5{
+.item-diary-book{
     position: relative;
     width: 25%;
 }
-.item-6{
+.item-three-man{
     position: relative;
     width: 25%;
 }
-.learnmore-h4{
+.learnmore-title-image{
     font-size:18px;
     font-family: 'Roboto';
     font-style: normal;
@@ -386,7 +379,7 @@ ul li a.item-btn{
 }
 
 /* CSS #4 Clients */
-.clients{
+.page-clients{
     margin-top: 14px;
     position: absolute;
     width: 100%;
@@ -451,7 +444,7 @@ ul li a.item-btn{
 }
 
 /* CSS #8 Ad */
-.ad{
+.page-ad{
     position: absolute;
     width: 100%;
     height: 180px;
@@ -515,7 +508,7 @@ ul li a.item-btn{
     font-size: 12px;  
 }
 /* CSS #9 Video Testimonial */
-.video{
+.page-video-testimonial{
     position: absolute;
     width: 100%;
     height: 721px;
@@ -572,12 +565,13 @@ ul li a.item-btn{
     padding-top:22px;
     padding-left: 28px;
 }
+
 /* CSS #11 Subcribe */
-.subcribe{
+.page-subcribe{
     box-sizing: border-box;
     position: absolute;
     width: 100%;
-    height: 307px;
+    height: 320px;
     top: 3771px;
     background: #3DBDB6;
     border: 1px solid #E1E1E1;
@@ -635,5 +629,108 @@ ul li a.item-btn{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: #fff;
+}
+
+/* CSS #12 Footer */
+.page-footer {
+    position: absolute;
+    width: 100%;
+    top: 4100px;
+    left: 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    background: #1F2532;
+    height: 300px;
+}
+.footer-infomation{
+    margin-top: 63px;
+    margin-left: 190px;
+}
+.footer-item{
+    height: 20px;
+}
+.footer-item-title{
+    text-align: center;
+    margin-top: -25px;
+    margin-left: -60px;
+}
+.footer-decription{
+    width: 228px;
+    height: 57px;
+    color: #fff;
+    padding-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    align-items: flex-end;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.footer-col{
+    display: flex;
+    margin-top: 51px;
+}
+.footer-col-same{
+    padding-left:100px;
+}
+.footer-col-same h4{
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    width: 42px;
+    height: 14px;
+}
+.footer-col-same ul{
+    padding: 0;
+}
+.footer-col-same ul li{
+    padding-top: 5px;
+}
+.footer-col-same ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.footer-logo{
+    width: 75px;
+    height: 17px;
+    position: absolute;
+    left: 1130px;
+    top: 72px;
+}
+.footer-bg{
+    background-color: #3E3E58;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+}
+.footer-bg p{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 890px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    left: 220px;
+    top: 334px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
     color: #fff;
 }
